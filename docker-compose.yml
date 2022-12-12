@@ -7,9 +7,9 @@ services:
 #       context: .
 #       dockerfile: /Dockerfile
     ports:
-      - "80:80"
+      - "55086:55087"
     depends_on:
-          - db1
+          - Utopia2.0
 
   db1:
     image: "mcr.microsoft.com/mssql/server:2019-latest"
