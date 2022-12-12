@@ -9,7 +9,7 @@ services:
     ports:
       - "55086:55087"
     depends_on:
-          - Utopia2.0
+          - Utopia
 
   db1:
     image: "mcr.microsoft.com/mssql/server:2019-latest"
