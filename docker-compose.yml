@@ -2,14 +2,14 @@ version: '3.4'
 
 services:
   project-backend:
-    image: r0790759/project-backend
+    image: r0618721/project-backend
 #     build:
 #       context: .
 #       dockerfile: /Dockerfile
     ports:
       - "80:80"
     depends_on:
-          - db1
+          - utopia
 
   db1:
     image: "mcr.microsoft.com/mssql/server:2019-latest"
@@ -17,7 +17,7 @@ services:
     ports:
       - 1433:1433  
     environment:
-        SA_PASSWORD: "S3cur3P@ssW0rd!"
+        SA_PASSWORD: "Utopia2.0"
         ACCEPT_EULA: "Y"
     volumes:
       - sqldata:/var/opt/mssql
